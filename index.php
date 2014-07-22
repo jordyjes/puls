@@ -40,21 +40,21 @@
 					Título del articulo
 				</a>
 			</h2>
-			<p class="autor_item">
+			<div class="autor_item">
 				por <a href="#">Jordyjes</a>
-			</p>
+			</div>
 			<div class="datos_item">
 			<a href="#" class="tag_item">pony</a>
 			<span class="fecha_item">
 				hace<strong>5</strong>min
-			</span>	
-			<a href="#" class="comentarios_item">69</a>
-			<a href="#" class="guardar_item"></a>
+			</span>				
 			</div>
 			<div class="votacion">
 				<a href="#" class="up"></a>
-				728
+				696
 				<a href="#" class="down"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item"></a>
 			</div>
 		</article>
 	</section>
