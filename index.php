@@ -5,6 +5,9 @@
 	<meta description"proyecto de la primera clase del curso de diseño web"/>
 	<!--la etiqueta meta keywords ni meta tagas ya no se usa-->
 	<title> PULS 2014 Comunidad de personas atractivas, inteligentes y sexy</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="normalize.css"><!--para estandarizar el css en todos los navegadores-->
+	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 	<header>
@@ -26,7 +29,7 @@
 			<li><a href="#">CSS·</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#">Publicar</a>
+				<a href="#" class="icon-lapiz">Publicar</a>
 			</li>
 		</ul>
 	</nav>
@@ -37,31 +40,162 @@
 			</figure>
 			<h2 class="titulo_item">
 				<a href="#">
-					Título del articulo
+					Socket.io lanza su versión 1.0
 				</a>
 			</h2>
 			<div class="autor_item">
 				por <a href="#">Jordyjes</a>
 			</div>
 			<div class="datos_item">
-			<a href="#" class="tag_item">pony</a>
+			<a href="#" class="tag_item">Pony</a>
 			<span class="fecha_item">
-				hace<strong>5</strong>min
+				hace <strong>5</strong> min 
 			</span>				
 			</div>
 			<div class="votacion">
-				<a href="#" class="up"></a>
+				<a href="#" class="up icon-f-arriba"></a>
 				696
-				<a href="#" class="down"></a>
+				<a href="#" class="down icon-f-abajo"></a>
 				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item"></a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="image.jpg">
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+					Pruebas de estrés para WebSockets en Node.js
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Jordyjes</a>
+			</div>
+			<div class="datos_item">
+			<a href="#" class="tag_item">Pony</a>
+			<span class="fecha_item">
+				hace <strong>5</strong> min 
+			</span>				
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				696
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="image.jpg">
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+					Socket.io lanza su versión 1.0
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Jordyjes</a>
+			</div>
+			<div class="datos_item">
+			<a href="#" class="tag_item">Pony</a>
+			<span class="fecha_item">
+				hace <strong>5</strong> min 
+			</span>				
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				696
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="image.jpg">
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+					Socket.io lanza su versión 1.0
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Jordyjes</a>
+			</div>
+			<div class="datos_item">
+			<a href="#" class="tag_item">Pony</a>
+			<span class="fecha_item">
+				hace <strong>5</strong> min 
+			</span>				
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				696
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="image.jpg">
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+					Socket.io lanza su versión 1.0
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Jordyjes</a>
+			</div>
+			<div class="datos_item">
+			<a href="#" class="tag_item">Pony</a>
+			<span class="fecha_item">
+				hace <strong>5</strong> min 
+			</span>				
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				696
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="image.jpg">
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+					Socket.io lanza su versión 1.0
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Jordyjes</a>
+			</div>
+			<div class="datos_item">
+			<a href="#" class="tag_item">Pony</a>
+			<span class="fecha_item">
+				hace <strong>5</strong> min 
+			</span>				
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				696
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>		</article>
+
+
+
 	</section>
 </header>
 <footer>
 	<p>
-	<strong>Power by Jordyjes</strong>
+		<strong>Power by Jordyjes</strong>
 	</p>
 	<p>
 		mejorando.la 2014

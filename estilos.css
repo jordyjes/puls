@@ -1,0 +1,282 @@
+/*@font-face {
+    font-family: 'open_sansregular';
+    src: url('fuentes/OpenSans-Regular-webfont.eot');
+    src: url('fuentes/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fuentes/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fuentes/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fuentes/icomoon.eot?-c6bqum');
+	src:url('fuentes/icomoon.eot?#iefix-c6bqum') format('embedded-opentype'),
+		url('fuentes/icomoon.woff?-c6bqum') format('woff'),
+		url('fuentes/icomoon.ttf?-c6bqum') format('truetype'),
+		url('fuentes/icomoon.svg?-c6bqum#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lapiz:before {
+	content: "\e601";
+	margin-right: 0.5em;
+}
+.icon-coment:before {
+	content: "\e602";
+}
+.icon-estrella:before {
+	content: "\e603";
+	position: relative;
+	top:0.1em;
+}
+.icon-f-arriba:before {
+	content: "\e604";
+}
+.icon-f-abajo:before {
+	content: "\e605";
+}
+
+
+a /* para poner estilo a los enlaces*/
+{
+	color: #33BCE0;
+}
+body
+{
+	background: #EEEEEE;
+	font-family:"Open Sans";/*declarando fuente para todo, entre "" cuando el nombre de la fuente tiene espacios*/
+	font-size: 16px; /*tamaño minimo para fuentes es 16px*/
+}
+
+footer
+{
+	
+	background: #22BCE0;
+	text-align: center;
+	color: rgba(255,255,255,0.7);
+	padding: 1em;
+}
+footer p:first-child /*primer elemento p de footer*/
+{
+	margin-bottom: 0;
+}
+footer p:last-child /*ultimo elemento p de footer*/
+{
+	margin-top: 0;
+}
+footer p:last-child:before
+{
+ content: "- "
+}
+footer p:last-child:after
+{
+ content: " -"
+}
+header
+{
+	background: #343B54;
+	color: white;	
+	/*un em es el tamaño de la letra M del tamaño de la fuente */
+	padding: 0.5em;
+	overflow: hidden; /*para cuando las cosas que flotan se salen*/
+	position: relative;
+	
+}
+header figure /*todas las etiquetas figure dentro de header*/
+{
+	float: left;
+	margin:0;
+}
+header h1 /*esto quiere decir el h1 que esta dentro de header*/
+{
+	font-size: 1.2em;
+	font-weight: normal;
+	margin:0.2em 70px 0 0; /*superior derecho inferior izquierdo, para ubicar los mergenes margin trabaja en el sentido de las manecillas del reloj*/
+
+}
+header #logo img /*la etiqueta imagen que esta dentro de una etiqueta con  id logo dentro del header*/
+{	
+	border-right: 1px solid white; /*solo borde de lado derecho, una linea*/
+	padding-right: 0.5em;
+	margin-right: 0.5em;
+	width: 52px;
+}
+header #avatar
+{ 	
+	margin: 0.5em 0.5em 0 0;
+	position: absolute; /*aqui este elemento obtiene la posicion 0,0 del elemento mas proximo con posicction relavie*/
+	right:0; /*esto es posicion*/
+	top:0; /*esto es posicion*/
+
+}
+header #avatar img
+{
+	border-radius: 50%;
+	width: 55px;
+}
+/*inline-block es para que todos los elementos esten en la misma linea*/
+
+nav
+{
+	background: #53D59F; /*#80BCA3*/
+	/*box-shadow: rgba(0,0,0,0-.5) 0px 0px 10px;*/
+	padding: 0 7em 0 0; /*cuando solo se ponen dos valores el primero es arriba y abajo y el segundo es iazquierda y derecha*/
+	position: relative;
+
+
+
+}
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul #publicar_nav
+{
+	
+	position: absolute; /*aqui este elemento adquiria la posicion 0,0 del su contenedor relativo*/
+	top: -0.3em; /*valor negativo para posicionar el boton publicar*/
+	right: 0;
+
+
+}
+nav ul #publicar_nav a /*fondo y paddin del boton publicar*/
+{
+	background: #22BCE0;
+	border-radius: 5px;
+	font-style: italic;;
+	padding: 0.8em 0.5em;
+	text-decoration: none; /*quitar la linea inferior del enlace*/
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+}
+nav ul li
+{
+	display: inline-block; /*para que no esten una debajo de otra*/
+	margin: 0 1em 0 0;
+}
+nav ul li a
+{
+	
+	color: white;
+	display: block; 
+	padding: 0.5em 0; /*el padding de una etiquta a hace que todo el padding sea clickeable y no solo el texto*/
+}
+#contenido
+{
+	margin: 1em;
+
+}
+
+#contenido .item
+{
+	background: white;
+	border-bottom: 3px solid #22BCE0;
+	min-height:183px ;
+	/*overflow: hidden;para que las cosas no se salgan de su contendor*/
+
+	margin-bottom: 3em;
+	position: relative;
+}
+#contenido .item .autor_item
+{
+	color:#AAA;
+}
+#contenido .item .datos_item
+{
+	margin: 1em 1em 0 0;
+	text-align: right;
+
+}
+
+#contenido .item .datos_item .tag_item
+{
+	background: #F4502A;
+	border-radius: 0.5em;
+	color: white;
+	float: left;
+	display: inline-block;
+	padding: 0.2em;
+	text-decoration: none;
+}
+
+#contenido .item .imagen_item
+{
+	float: left;	
+	margin: 0 1em 0 0;
+}
+#contenido .item .imagen_item  img
+{
+	width: 96px;	
+	background: red;
+}
+#contenido .imagen_item
+{
+	margin: 0;
+}
+#contenido .item .titulo_item
+{
+
+	font-size:1.2em;
+	font-style: italic;
+	padding-top: 1em;
+}
+#contenido .item .titulo_item a
+{
+	color: #444;
+	text-decoration:none;
+}
+#contenido .item .votacion
+{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	position: absolute;
+	padding:0.2em 0.5em;
+	margin-top: 3px;
+	left: 5%;
+	top:100%;
+	width: 90%;
+}
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+#contenido .item .votacion .guardar_item
+{
+	color: #FFBE2C;
+}
+#contenido .item .votacion .comentarios_item,
+#contenido .item .votacion .guardar_item
+{
+	float:right;
+	text-decoration: none;
+
+}
+
+#contenido .item .votacion .up
+{
+	color: #DD4F24;
+}
+#contenido .item .votacion .down
+{
+	color: #22BC68;
+}

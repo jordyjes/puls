@@ -1,0 +1,147 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M864 0c88.364 0 160 71.634 160 160 0 36.020-11.91 69.258-32 96l-64 64-224-224 64-64c26.742-20.090 59.978-32 96-32zM64 736l-64 288 288-64 592-592-224-224-592 592zM715.578 363.578l-448 448-55.156-55.156 448-448 55.156 55.156z"
+				],
+				"tags": [
+					"pencil",
+					"write",
+					"edit",
+					"blog",
+					"note"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 5,
+				"order": 18,
+				"prevSize": 32,
+				"code": 58881,
+				"name": "lapiz",
+				"ligatures": ""
+			},
+			"setIdx": 6,
+			"iconIdx": 5
+		},
+		{
+			"icon": {
+				"paths": [
+					"M512 64c282.77 0 512 186.25 512 416 0 229.752-229.23 416-512 416-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"
+				],
+				"tags": [
+					"bubble",
+					"comment",
+					"chat",
+					"talk"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 106,
+				"order": 11,
+				"prevSize": 32,
+				"code": 58882,
+				"name": "coment",
+				"ligatures": ""
+			},
+			"setIdx": 6,
+			"iconIdx": 106
+		},
+		{
+			"icon": {
+				"paths": [
+					"M1024 397.050l-353.78-51.408-158.22-320.582-158.216 320.582-353.784 51.408 256 249.538-60.432 352.352 316.432-166.358 316.432 166.358-60.434-352.352 256.002-249.538z"
+				],
+				"tags": [
+					"star",
+					"rate",
+					"favorite",
+					"bookmark"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 208,
+				"order": 12,
+				"prevSize": 32,
+				"code": 58883,
+				"name": "estrella",
+				"ligatures": ""
+			},
+			"setIdx": 6,
+			"iconIdx": 208
+		},
+		{
+			"icon": {
+				"paths": [
+					"M512.002 0l-512.002 512h320v511.998l384 0.002v-512h320z"
+				],
+				"tags": [
+					"arrow-up",
+					"upload",
+					"top"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 288,
+				"order": 8,
+				"prevSize": 32,
+				"code": 58884,
+				"name": "f-arriba",
+				"ligatures": ""
+			},
+			"setIdx": 6,
+			"iconIdx": 288
+		},
+		{
+			"icon": {
+				"paths": [
+					"M512 1024l512-512h-320v-511.998l-384-0.002v512h-320z"
+				],
+				"tags": [
+					"arrow-down",
+					"download",
+					"bottom"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 292,
+				"order": 9,
+				"prevSize": 32,
+				"code": 58885,
+				"name": "f-abajo",
+				"ligatures": ""
+			},
+			"setIdx": 6,
+			"iconIdx": 292
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"metrics": {
+				"emSize": 512,
+				"baseline": 6.25,
+				"whitespace": 50
+			}
+		},
+		"imagePref": {},
+		"historySize": 100,
+		"showCodes": true,
+		"search": ""
+	}
+}
