@@ -4,6 +4,8 @@
 	<meta charset="utf-8"/> <!--para indicar la codificacion al navegador-->
 	<meta description"proyecto de la primera clase del curso de diseño web"/>
 	<!--la etiqueta meta keywords ni meta tagas ya no se usa-->
+	<meta name="viewport" content=" width=device-width, minimu-scale=1, maximum-scale=1"/>
+	<!--=" width=device-width quiere decir que el ancho sea el ancho del dipostivo  y minimu-scale=1 es decir al 100%-->
 	<title> PULS 2014 Comunidad de personas atractivas, inteligentes y sexy</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="normalize.css"><!--para estandarizar el css en todos los navegadores-->
