@@ -59,6 +59,10 @@ a /* para poner estilo a los enlaces*/
 {
 	color: #33BCE0;
 }
+aside
+{
+	display: none;
+}
 body
 {
 	background: #EEEEEE;
@@ -112,12 +116,24 @@ header h1 /*esto quiere decir el h1 que esta dentro de header*/
 	margin:0.2em 70px 0 0; /*superior derecho inferior izquierdo, para ubicar los mergenes margin trabaja en el sentido de las manecillas del reloj*/
 
 }
+header #logo
+ {
+ 	border-right: 1px solid white; /*solo borde de lado derecho, una linea*/
+ 	padding-right: 0.5em;
+	margin-right: 0.5em;
+ }
 header #logo img /*la etiqueta imagen que esta dentro de una etiqueta con  id logo dentro del header*/
 {	
-	border-right: 1px solid white; /*solo borde de lado derecho, una linea*/
-	padding-right: 0.5em;
-	margin-right: 0.5em;
-	width: 52px;
+	/*-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);*/
+	transition:0.8s;
+	width: 52px
+}
+header #logo img:hover
+{
+	
+	transform: rotate(360deg);
 }
 header #avatar
 { 	
@@ -138,7 +154,7 @@ nav
 {
 	background: #53D59F; /*#80BCA3*/
 	/*box-shadow: rgba(0,0,0,0-.5) 0px 0px 10px;*/
-	padding: 0 7em 0 0; /*cuando solo se ponen dos valores el primero es arriba y abajo y el segundo es iazquierda y derecha*/
+	padding: 0 7em 0 1em; /*cuando solo se ponen dos valores el primero es arriba y abajo y el segundo es iazquierda y derecha*/
 	position: relative;
 
 
@@ -149,6 +165,7 @@ nav ul
 	list-style: none;
 	margin: 0;
 	padding: 0;
+
 }
 nav ul #publicar_nav
 {
@@ -169,18 +186,29 @@ nav ul #publicar_nav a /*fondo y paddin del boton publicar*/
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
 }
+nav ul #publicar_nav a:hover
+{
+	box-shadow: 0 0 30px yellow;
+}
 nav ul li
 {
 	display: inline-block; /*para que no esten una debajo de otra*/
-	margin: 0 1em 0 0;
+	margin: 0 0.5em 0 0;
 }
+
 nav ul li a
 {
-	
+	text-decoration: none;
 	color: white;
 	display: block; 
-	padding: 0.5em 0; /*el padding de una etiquta a hace que todo el padding sea clickeable y no solo el texto*/
+	padding: 0.5em; /*el padding de una etiquta a hace que todo el padding sea clickeable y no solo el texto*/
+	-webkit-transition:.3s;
 }
+nav ul li a:hover
+{
+	background: #343B54;
+}
+
 #contenido
 {
 	margin: 1em;
@@ -282,10 +310,7 @@ nav ul li a
 
 @media screen and (min-width: 800px)
 {
-	body
-	{
-		background: red;
-	}
+
 	#contenido
 	{
 		overflow: hidden; /*para ocultar el desalinea*/
@@ -294,12 +319,29 @@ nav ul li a
 	{
 		width: 49%;
 		float: left; /* para acomodar elementos a un costado*/
-		margin-right:1%; 
+		
 
 	}
-	#contenido .item:nth-child(1)
+	#contenido .item:nth-child(odd) /*para agregar estulos a un elemnto de .item (odd para tomar los numeros impares de los elementos, se numeran segun su orden)*/
 	{
-		background: red
+		margin-right: 2%
 	}
 
+}
+
+@media screen and (min-width: 1000px)
+{
+	aside
+	{ 
+		display: block;
+		float: right;
+		margin:1em;
+		width: 25%	
+	}
+
+	aside video
+	{
+		width: 100%;
+	}
+	
 }
