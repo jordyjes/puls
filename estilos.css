@@ -264,6 +264,14 @@ nav ul li a
 {
 	color: #FFBE2C;
 }
+#contenido .item .votacion .up
+{
+	color: #DD4F24;
+}
+#contenido .item .votacion .down
+{
+	color: #22BC68;
+}
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item
 {
@@ -272,11 +280,26 @@ nav ul li a
 
 }
 
-#contenido .item .votacion .up
+@media screen and (min-width: 800px)
 {
-	color: #DD4F24;
-}
-#contenido .item .votacion .down
-{
-	color: #22BC68;
+	body
+	{
+		background: red;
+	}
+	#contenido
+	{
+		overflow: hidden; /*para ocultar el desalinea*/
+	}
+	#contenido .item
+	{
+		width: 49%;
+		float: left; /* para acomodar elementos a un costado*/
+		margin-right:1%; 
+
+	}
+	#contenido .item:nth-child(1)
+	{
+		background: red
+	}
+
 }
