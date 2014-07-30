@@ -1,18 +1,36 @@
-var $form = $('#formulario'),
-	$titulo=$('#titulo'),
-	$url=$('#link'),
-	$lista=$("#contenido"),
+var $form       =$('#formulario'),
+	$titulo     =$('#titulo'),
+	$url        =$('#link'),
+	$lista      =$("#contenido"),
 	$primerPost =$('.item').first();
+     ss         = sessionStorage,
+     ls         = localStorage;
+
+if (ls.getItem('autosave'))
+{
+    $titulo.val(ss.getItem('titulo'));
+    $url.val(ss.getItem('url'));
+}
+
+var id = setInterval(function()
+    {
+        ss.setItem('titulo', $titulo.val());
+        ss.setItem('url', $url.val())
+    },1000);
+
 
 function mostrarOcultarFormulario()
 {
-	$form.slideToggle();
+	$form.slideToggle();/*slidetoggle hace un efecto de mostrar cuando el elemento esta oculto y ocultar cuan el elemento esta mostrado*/
+    
+    $lista.slideToggle();
 	return false;
 }
 
-function agregarPost()
+function agregarPost(e)
 {
- var titulo = $titulo.val(),
+    e.preventDefault();
+    var titulo = $titulo.val(),
     url = $url.val(),
     $clone =$primerPost.clone();
  
@@ -22,12 +40,35 @@ function agregarPost()
 
     	$clone.hide();
 
-    $lista.prepend($clone);
- 
-     $clone.fadeIn();
+     $lista.prepend($clone);
+     mostrarOcultarFormulario();
+     $titulo.val('');
+     $url.val('');
+     $clone.slideDown();
+     return false;
+}
+function grabarInformacion(e)
+{
+    e.preventDefault();
+    var titulo = $titulo.val(),
+    url = $url.val(),
+    
+    ls= localStorage,
+    ss=sessionStorage;
+
+    ls.setItem('titulo',titulo);
+    ls.setItem('url',url);
+
+    ss.setItem('titulo',titulo);
+    ss.setItem('url',url);
+
+    mostrarOcultarFormulario();
+     $titulo.val('');
+     $url.val('');
 }
 $('#publicar_nav a').click( mostrarOcultarFormulario )
 $('#formulario').on('submit',agregarPost)
+/*$('#formulario').on('submit',grabarInformacion)*/
 
 
 /*rony 961 150 1860. 
