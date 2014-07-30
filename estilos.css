@@ -219,7 +219,7 @@ nav ul li a:hover
 {
 	background: white;
 	border-bottom: 3px solid #22BCE0;
-	min-height:183px ;
+	min-height:183px;
 	/*overflow: hidden;para que las cosas no se salgan de su contendor*/
 
 	margin-bottom: 3em;
@@ -344,4 +344,34 @@ nav ul li a:hover
 		width: 100%;
 	}
 	
+}
+
+/**
+*FORMULARIOS
+*se recomienda utilizar clases en las etiquetas html para dar estilos en base a esas clases
+*/
+.formulario
+{
+	text-align: right;
+	padding: 1em;
+	display: none;
+}
+.formulario input
+{
+	border-radius: 5px;
+	padding: 0.2em 0.6em
+}
+.formulario input[type="text"],
+.formulario input[type="url"]
+{
+	border:1px solid #888;
+}
+.formulario input[type="submit"]
+{
+	background: #22BCE0;
+	font-style: italic;;
+	color:white;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	border:1px solid #22BCE0;
 }
