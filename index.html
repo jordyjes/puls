@@ -43,7 +43,7 @@
 		<input type="url" placeholder="Link" id="link" required>
 		<input type="submit" value="Agregar">
 	</form>
-
+<div id="geo"></div>
 	<aside>
 		<video width="320" height="240" controls autoplay>
 		<source src="lecturas.m4v" type="video/m4v">
@@ -226,7 +226,24 @@
 		$(function(){
 			var geo = navigator.geolocation; /*geo hace referencia al objeto que permite usar geolocalizacion*/
 			/*console.log(geo);*/
-			geo.getCurrentPosition();/*pide la informacion una vez*/
+
+			function geo_exito(coords)
+			{
+				var lat= position.coords.latitud;
+				var lon = position.coords.longitude;
+
+				var mapa= new image();
+				mapa.src="http://maps.googleapis.com/maps/apis/staticmap?center="+lat+","+lon+"&zoom=12&size=250x250&sensor=false";
+			}
+			function geo_error()
+			{
+				console.log("Hmmmm... esto es incomodo, no se donde estas -_-' ");
+			}
+			geo.getCurrentPosition(geo_exito, geo_error, {
+	    	  enableHighAccuracy: true,
+		      timeout: 5000,
+		      maximumAge: 0
+		     });/*pide la informacion una vez*/
 			/*geo.watchPosition(); checa la posicion constantemente*/
 		});
 
