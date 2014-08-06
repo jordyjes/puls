@@ -224,7 +224,10 @@
 	<script src="formulario.js"></script>
 	<script>
 		$(function(){
-			
+			var geo = navigator.geolocation; /*geo hace referencia al objeto que permite usar geolocalizacion*/
+			/*console.log(geo);*/
+			geo.getCurrentPosition();/*pide la informacion una vez*/
+			/*geo.watchPosition(); checa la posicion constantemente*/
 		});
 
 		
