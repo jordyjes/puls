@@ -22,7 +22,7 @@
 			Puls2014: Comunidad de personas atractivas y sexy
 		</h1>
 		<figure id="avatar">
-			<img src="avatar.jpg">
+			
 		</figure>
 	</header>
 	<nav>
@@ -43,8 +43,10 @@
 		<input type="url" placeholder="Link" id="link" required>
 		<input type="submit" value="Agregar">
 	</form>
-<div id="geo"></div>
+
 	<aside>
+	<div id="clima"></div>
+	<div id="geo"></div>
 		<video width="320" height="240" controls autoplay>
 		<source src="lecturas.m4v" type="video/m4v">
 		<source src="lecturas.ogg" type="video/ogg">
@@ -218,38 +220,18 @@
 	<p>
 		mejorando.la 2014
 	</p>
+	<div class="logos"></div>
 </footer>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script><!--este enlace es para que la pagina cargue y muestre tambien el alerta, si no apareceria primero el alerta y la pagina en blanco otra opcion seria poner el scrip de alerta al final para que tambien se muestre la pagina antes>
 	<script src="alerta.js"></script-->
 	<script src="formulario.js"></script>
-	<script>
-		$(function(){
-			var geo = navigator.geolocation; /*geo hace referencia al objeto que permite usar geolocalizacion*/
-			/*console.log(geo);*/
-
-			function geo_exito(coords)
-			{
-				var lat= position.coords.latitud;
-				var lon = position.coords.longitude;
-
-				var mapa= new Image();
-				mapa.src="http://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+"&zoom=12&size=250x250&sensor=false";
-
-				
-			}
-			function geo_error()
-			{
-				console.log("Hmmmm... esto es incomodo, no se donde estas -_-' ");
-			}
-			geo.getCurrentPosition(geo_exito, geo_error, {
-	    	  enableHighAccuracy: true,
-		      timeout: 5000,
-		      maximumAge: 0
-		     });/*pide la informacion una vez*/
-			/*geo.watchPosition(); checa la posicion constantemente*/
+	<script src="geo.js"></script>
+	<script src="ajax.js"></script>
+	<script type="text/javascript">
+		$(function()
+		{
+			/*sirve para ejecutar codigo una vez que se haya cargado el documento*/
 		});
-
-		
 	</script>
 </body>
 </html>
